@@ -1,0 +1,64 @@
+div.counter-interface{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    margin: 0 auto;
+    background: rgb(245, 0, 0);
+    padding: 2px;
+    margin: 20px auto;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    animation-name: size;
+    animation-duration: 0.2s;
+    animation-direction: alternate-reverse;
+}
+@keyframes size{
+    from{transform: scale(1);}
+    to{transform: scale(1.1);}
+}
+div.counter-interface p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    padding: 4px;
+    margin: auto 0;
+    
+}
+div.counter-screen{
+    width: 90%;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto auto 0px;
+}
+div.counter-screen input{
+    border: none;
+    outline-style: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 30pt;
+    appearance: text;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+div.buttons{
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px auto 5px;
+}
+div.buttons button.min{
+    border-right: 1px solid black;
+    border-bottom-left-radius: 15px;
+    background-color: rgb(255, 157, 157);
+}
+
+
+div.buttons button.max{
+    border-bottom-right-radius: 15px;
+    background-color: rgb(187, 187, 255);
+}
