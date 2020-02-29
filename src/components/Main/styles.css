@@ -68,6 +68,19 @@ main div.counters-interface{
 @media only screen and (max-width: 600px){
     main div.counters-interface{
         display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 1000px;
+        margin: 20px auto;
+        background-color: rgb(228, 228, 228);
+        padding: 10px 5px;
+        
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    main div.counters-interface{
+        display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
         max-width: 1000px;
